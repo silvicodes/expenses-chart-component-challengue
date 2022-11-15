@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="mainstyle.css">
+  <link rel="stylesheet" href="mainstyle.css.map">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+</head>
+<body>
+  <div class="master">
+    <div class="balance-card">
+      <div class="details">My balance</div>
+      <span>$921.48</span>
+    </div>
+
+    <div class="spending-card">
+      <h2 class="primary-text">Spending - Last 7 days</h2>
+      <div class="chart">
+        <div class="chartbarday">
+          <div class="bar"></div>
+          <span>mon</span>
+        </div>
+        <div class="chartbarday">
+          <div class="bar"></div>
+          <span>tue</span>
+        </div>
+        <div class="chartbarday">
+          <div class="bar"></div>
+          <span>wed</span>
+        </div>
+        <div class="chartbarday">
+          <div class="bar"></div>
+          <span>thu</span>
+        </div>
+        <div class="chartbarday">
+          <div class="bar"></div>
+          <span>fri</span>
+        </div>
+        <div class="chartbarday">
+          <div class="bar"></div>
+          <span>sat</span>
+        </div>
+        <div class="chartbarday">
+          <div class="bar"></div>
+          <span>sun</span>
+        </div>
+      </div>
+      <div class="total-month-amount-block">
+        <div class="details secondary-details">
+          Total this month
+        </div>
+        
+        <div class="numbers-month-amount-container">
+          <div class="month-amount primary-text">
+            $478.33
+          </div>
+          <div class="percentage-block">
+            <div class="primary-text">+2.4%</div>
+            <div class="details secondary-details">from last month</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Silvia Garcia</a>.
+  </div>
+  -->
+  <script type="text/javascript" src="data.json"></script>
+  <script type="text/javascript" src="chartmaker.js"></script>
+</body>
+</html>
